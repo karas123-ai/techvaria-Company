@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
 }
 
 .game-grid {
@@ -9,14 +11,20 @@ body {
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .game {
   background-color: #4CAF50;
   color: white;
-  padding: 20px;
+  padding: 20px 40px;
   cursor: pointer;
   border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.game:hover {
+  background-color: #45a049;
 }
 
 .popup {
@@ -26,7 +34,8 @@ body {
   left: 5%;
   width: 90%;
   height: 90%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
 }
 
 .popup iframe {
@@ -41,4 +50,5 @@ body {
   color: white;
   font-size: 30px;
   cursor: pointer;
+  z-index: 1001;
 }
